@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Registration Form</title>
+</head>
+<body>
+    <center>
+        <h1>Employee Registration Form</h1>
+        <form action="/action.php">
+            <fieldset>
+                <legend><b>Registration Details</b></legend>
+                <label for="fname"><b>Enter your name:</b></label><br>
+                <input type="text" placeholder="First name" id="fname" name="fname">
+                <input type="text" placeholder="Last name"><br><br>
+
+                <b>Please select gender:</b><br>
+                <input type="radio" name="gender" value="male"> Male
+                <input type="radio" name="gender" value="female"> Female
+                <input type="radio" name="gender" value="other"> Other <br><br>
+
+                <label for="marital-status"><b>Marital Status:</b></label>
+                <select id="marital-status" name="marital_status">
+                    <option value="single">Single</option>
+                    <option value="married">Married</option>
+                    <option value="divorced">Divorced</option>
+                    <option value="widowed">Widowed</option>
+                </select><br><br>
+
+                <label for="Experience"><b>Experience:</b></label>
+                <input type="number" id="Experience" name="Experience" min="0" max="30" step="1"><br><br>
+                <label for="empid"><b>Employee ID</b></label>
+                <input type="number" id="empid">
+               <br>
+                <b>Do you agree to all terms and conditions?</b>
+                <input type="checkbox" id="to" name="toaAgree">
+                <label for="to">Yes, I agree</label><br><br>
+                
+                <button type="submit">Register</button>
+            </fieldset>
+        </form>
+    </center>
+</body>
+</html>
