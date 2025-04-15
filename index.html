@@ -2,74 +2,60 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>CSS Assignments</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sakshi's Assignments</title>
   <style>
     body {
       margin: 0;
-      padding: 0;
-      font-family: 'Segoe UI', sans-serif;
-      background: linear-gradient(to right, #ff4e50, #f9d423);
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(135deg, #fdfcfb, #e2d1c3);
       display: flex;
-      justify-content: center;
+      flex-direction: column;
       align-items: center;
-      min-height: 100vh;
-      color: #fff;
-    }
-
-    .container {
-      background: rgba(255, 255, 255, 0.1);
-      backdrop-filter: blur(12px);
-      padding: 40px;
-      border-radius: 20px;
-      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
-      text-align: center;
-      max-width: 500px;
-      width: 90%;
+      justify-content: center;
+      height: 100vh;
+     
     }
 
     h1 {
-      margin-bottom: 30px;
-      font-size: 2.2rem;
+      font-size: 2.5em;
+      margin-bottom: 40px;
+      color: #4a148c;
     }
 
-    .btn-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
-      gap: 15px;
+    .button-container {
+      display: flex;
+      gap: 30px;
     }
 
     .btn {
-      background: #fff;
-      color: #ff4e50;
-      padding: 12px 20px;
-      border: none;
-      border-radius: 12px;
+      padding: 15px 30px;
+      font-size: 1.2em;
       font-weight: bold;
+      color: white;
+      background: linear-gradient(to right, #7b1fa2, #512da8);
+      border: none;
+      border-radius: 10px;
       cursor: pointer;
-      transition: all 0.3s ease;
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
       text-decoration: none;
-      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+      box-shadow: 0 6px 10px rgba(0,0,0,0.2);
     }
 
     .btn:hover {
-      transform: scale(1.05);
-      background: #ffe8e8;
+      transform: translateY(-5px);
+      box-shadow: 0 10px 15px rgba(0,0,0,0.25);
     }
   </style>
 </head>
 <body>
-  <div class="container">
-    <h1>CSS Assignments</h1>
-    <div class="btn-grid">
-     
-      <a class="btn" href="Externalcss.html">External CSS</a>
-      <a class="btn" href="InlineCssExample.html">Inline CSS</a>
-      <a class="btn" href="InternalCss.html">Internal CSS</a>
-      <a class="btn" href="Timetable.html">Timetable</a>
-      <a class="btn" href="PortfolioPage.html">Portfolio</a>
-      <a class="btn" href="EmployeeRegistration.html">Employee Form</a>
-    </div>
+  <h1>Web Developemnt Assignments</h1>
+  <div class="button-container">
+    <a href="HTML/index.html" class="btn">HTML Assignments</a>
+    <a href="CSS/index.html" class="btn">CSS Assignments</a>
+    <a href="XML_CSS/XML_index.html" class="btn">XML Assignments</a>
+    
+
   </div>
 </body>
 </html>
